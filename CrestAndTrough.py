@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[11]:
-
-
 # Defining funtion to find max crest [value,index]
 def maxCrest(arr):
     crest = [0,0] # seting default to [0,0]
@@ -26,10 +20,6 @@ def maxCrest(arr):
         i+=1
     return crest
 
-
-# In[12]:
-
-
 # Defining function to find min crest [value,index]
 def minCrest(arr):
     crest = [max(arr),0]
@@ -51,10 +41,6 @@ def minCrest(arr):
         i-=1
     return crest
 
-
-# In[13]:
-
-
 # Defining function to find max trough [value,index]
 def maxTrough(arr):
     trough = [0,0]
@@ -74,10 +60,6 @@ def maxTrough(arr):
                 trough[1] = i
         i+=1
     return trough
-
-
-# In[14]:
-
 
 # Defining fucntion to find min trough [value,index]
 def minTrough(arr):
@@ -99,10 +81,7 @@ def minTrough(arr):
         i-=1
     return trough
 
-
-# In[21]:
-
-
+# Main driver
 T = int(input())
 while T:
     n = int(input())
@@ -117,22 +96,3 @@ while T:
         #print("Max Crest :",max_c,"\nMin Crest :",min_c,"\nMax Trough :",max_t,"\nMin Trough :",min_t)
         print(max(abs(max_c[1]-min_c[1]),abs(max_t[1]-min_t[1])))
     T-=1
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
